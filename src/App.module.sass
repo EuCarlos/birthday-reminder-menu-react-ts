@@ -1,0 +1,61 @@
+.contentWrapper
+    & header
+        display: flex
+        justify-content: space-between
+        background: #577590
+        color: #fff
+        padding: 1rem 3.5rem
+
+        & .notifications 
+            display: flex
+            & svg
+                width: 20
+                cursor: pointer
+                transition: all .7s
+                &:hover path
+                    fill: #e03535
+            & span
+                padding: 1px 4px
+                margin-right: 6px 
+                background: #e03535
+                color: #fff
+                border: solid 1px #eed7d7
+                border-radius: 5px
+
+    & .box
+        position: fixed
+        top: 60px
+        right: 37px
+        z-index: 2
+
+    & .open
+        background: #fff
+        width: max-content
+        padding: 2rem
+        border-radius: .5rem
+        position: relative
+
+        & article:first-child ~ .arrow
+            background-color: #fff
+
+        & .arrow
+            position: absolute
+            width: 11px
+            height: 11px
+            top: -5.5px
+            right: 26px
+            background-color: #fff
+            transform: rotate(45deg)
+            transition: .3s
+            z-index: 3
+        & button
+            background: #fff
+            border: none
+            color: #577590
+            width: 100%
+            cursor: pointer
+            &:hover
+                color: #1a1414
+
+        & .noReminders
+            margin: 0
